@@ -3670,17 +3670,17 @@ hr {
 		top: 4px;
 	}
 }
-.content ul {
+.marker {
 	margin-bottom: 15px;
 }
-.content li {
+.marker li {
 	margin-bottom: 5px;
 	margin-left: 15px;
 	padding-left: 25px;
 	position: relative;
 }
 
-.content li::before {
+.marker li::before {
 	background: #e5bc3d;
 	content: "";
 	height: 6px;
