@@ -1,0 +1,203 @@
+.menu_wrap-mobile-inn{
+	position: relative;
+}
+.menu_wrap-modile-search{
+	position: absolute;
+	top: -58px;
+	left: 14%;
+}
+.menu_wrap-modile-search .searchForm,.menu_wrap-modile-search .sInp,.menu_wrap-modile-search .sSub{
+	background-color: #231d1d;
+}
+.menu_wrap-modile-search .sInp{
+	color: #fff;
+	border: solid 1px #cbae18;
+}
+.menu_wrap-modile-search .sSub{
+	background: 0 0;
+	background-image: url(../images/search.svg);
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	background-position: center;	
+	border: solid 1px #cbae18;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-left-color: transparent;
+
+}
+@media (max-width: 768px){
+	.menu_wrap-modile-search{
+		left: 10px;
+	}
+}
+.section-sales{
+	position: relative;
+}
+.section-sales .yellowSq{
+	position: relative;
+	z-index: 1
+}
+.section-sales .yellowSq:after{
+	background: #e33c43;
+}
+.section-sales .catalog_list{
+	width: 100%;
+}
+.section-sales .slick-next{
+	right: 7px;
+	background-position: -35px 0;
+}
+.section-sales .slick-prev{
+    right: 47px;
+    background-position: 0 0;
+}
+.section-sales .sales-pagi{
+    font-size: 0;
+    text-align: center;
+    
+}
+.section-sales .sales-pagi .slick-dots{
+	text-align: center;
+}
+.section-sales .sales-pagi .slick-dots li{
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	border: 2px solid #cccccc;
+	background-color: #fff;
+	cursor: pointer;
+	margin: 0 5px;
+	position: relative;
+	z-index: 1
+}
+.section-sales .sales-pagi .slick-dots li.slick-active{
+	background-color: #e33c43;
+	border-color: #e33c43;
+
+}
+.section-sales .slick-arrow{
+	z-index: 1;
+}
+.section-sales .slick-arrow.slick-disabled{
+	opacity: .5;
+}
+.section-sales .sales-pagi:before,.section-sales .sales-pagi:after{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 150px;
+	top: 30px;
+	bottom: 30px;
+	opacity: 0;
+	transition: opacity .3s;
+	pointer-events: none;
+}
+.section-sales .sales-pagi:before{
+	background-image: linear-gradient( 270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.90196) 100%);
+	left: 0;
+}
+.section-sales .sales-pagi:after{
+	background-image: linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.90196) 100%);
+	right: 0;
+}
+.section-sales .catalog_list.bgl ~ .sales-pagi:before{
+	opacity: 1;
+}
+.section-sales .catalog_list.bgr ~ .sales-pagi:after{
+	opacity: 1;
+}
+.menu > li > a{
+	padding: 0 19px;
+}
+.menu > li > a.sales{
+	color: #e33c43;
+}
+.column-color{
+	overflow-y: auto;
+	max-height: 195px;
+	margin-right: 9px;
+	margin-bottom: 5px
+}
+.column-color::-webkit-scrollbar{
+	border-radius: 3px;
+	width: 5px;
+	background-color: #ccc;
+}
+.column-color::-webkit-scrollbar-thumb{
+	background: linear-gradient(to right, #ffe300 0%,#ff7f00 100%);;
+	border-radius: 3px;
+}
+.column-color label input{
+	position: static;
+	visibility: visible;
+	margin-right: 9px;
+}
+.column-color .color:after{
+	display: none;
+}.column-color .color{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+	margin-bottom: 3px;
+}
+.color.white{
+	border: 1px solid #ccc;
+}
+.offer{
+	background: url(/bitrix/templates/sagardi/images/icon/offer.svg)
+}
+.pdf{
+	background: url(/bitrix/templates/sagardi/images/icon/pdf.svg)
+}
+.collection{
+	background: url(/bitrix/templates/sagardi/images/icon/collection.svg)
+}
+.dogovor-link{
+	position: absolute;
+	right: 0;
+	font-weight: 600;
+	color: #000;
+	text-decoration: none;
+	font-size: 13px;
+	top: -60px;
+}
+.dogovor-link span:after{
+	content: '';
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url(/bitrix/templates/sagardi/images/icon/pdf.svg);
+	margin-left: 10px;
+	vertical-align: middle;
+	margin-bottom: 5px;
+}
+@media (max-width: 768px){
+	.section-sales .sales-pagi:before,.section-sales .sales-pagi:after{
+		width: 80px;
+	}
+	.section-sales .sales-pagi .slick-dots li{
+		display: none;
+	}
+	.dogovor-link{
+		position: static;
+		margin-bottom: 12px;
+		display: block;
+		
+	}
+}
+@media (max-width: 1200px){
+	.menu > li > a{
+		padding: 0 12px;
+	}
+}
+@media (max-width: 1030px){
+	.menu > li > a{
+		font-size: 15px;
+	}
+}

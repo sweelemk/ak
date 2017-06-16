@@ -92,7 +92,59 @@ $(document).ready(function() {
 			}
 		]
 	});
-
+	function salesslider(){
+		var slider = $('.js-sales');
+		slider.on('init reinit afterChange breakpoint',function(event, slick, currentSlide, nextSlide){
+			
+			var count = slick.slideCount;
+			var cur = currentSlide;
+			var slidestoscroll = slick.options.slidesToScroll;
+			console.log(slidestoscroll);
+			if(cur == undefined || cur == 0){
+				
+				slider.removeClass('bgl');
+			}else{
+				slider.addClass('bgl');
+			}
+			if(cur >= count - slidestoscroll){
+				slider.removeClass('bgr');
+			}else{
+				slider.addClass('bgr');
+			}
+			// var slidesNext = parseInt(nextSlide);
+			// leftblocks.removeClass('curr');
+			// dopcont.find('[data-slick-index = '+ slidesNext +']').addClass('curr');
+		});		
+		slider.slick({
+			arrows: true,
+			infinite: false,
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			adaptiveHeight: false,
+			// centerMode: true,
+			// initialSlide: 2,
+			// draggable: false,
+			dots: true,
+			appendDots: $('.js-sales').parent().find('.sales-pagi'),
+			responsive: [
+				{
+					breakpoint: 981,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 3
+						}
+				},
+				{
+					breakpoint: 768,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+				}
+			]
+		});
+	}
+	salesslider();
 	$('.js-contact-slider').slick({
 		arrows: false,
 		infinite: true,

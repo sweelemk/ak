@@ -24,6 +24,9 @@
 	border-bottom: none;
 	padding-bottom: 30px;
 }
+.menu > li > a{
+	padding: 0 23px;
+}
 .work-inner .btn-feedback{
 	margin-bottom:25px;
 	padding-bottom:38px;
@@ -32,6 +35,11 @@
 }
 .work-inner .similar .work-news{
 	margin: 0;
+}
+@media (max-width: 1280px){
+	.menu > li > a{
+		padding: 0 16px;
+	}
 }
 @media (max-width: 1040px){
 	.work-inner .option-text,.work-inner .content-text{
