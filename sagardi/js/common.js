@@ -186,6 +186,7 @@ $(document).ready(function() {
 		asNavFor: '.js-gallery-pager',
 		swipe: false
 	});
+
 	$('.js-gallery-pager').slick({
 		arrows: true,
 		infinite: true,
@@ -487,17 +488,19 @@ $(document).ready(function() {
 
 
 	//video
-	function initVideo() {
-		var myPlayer = videojs('video');
-		videojs.options.flash.swf = "../video/video-js.swf";
-		$('.js-gallery-pager .slick-slide').on('click', function(){
-			if($(this).hasClass('video-holder')){
-				//myPlayer.play();
-			}else{
-				//myPlayer.pause();
-				//myPlayer.currentTime(0);
-			}
-		});
+	function initVideo() {  
+		$(".video-js").each(function (videoIndex) {
+		    var videoId = $(this).attr("id");
+			var myPlayer = videojs(videoId);
+		    _V_(videoId).ready(function(){
+		        $('.js-gallery-pager .slick-slide').on('click', function(){
+		            $(".video-js").each(function (index) {
+		                this.player.pause();
+		            });
+		        });
+
+		    });
+		});    
 	}
 	initVideo();
 

@@ -164,6 +164,14 @@
 	font-size: 13px;
 	top: -60px;
 }
+.gallery-slider .slick-slide .video-js{
+	height: auto !important;
+	min-height: 410px;
+}
+.gallery-slider .slick-slide .video-js.vjs-fullscreen{
+	height: 100% !important;
+	min-height: 410px;
+}
 .dogovor-link span:after{
 	content: '';
 	display: inline-block;

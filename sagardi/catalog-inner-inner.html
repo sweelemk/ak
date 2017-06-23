@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="css/jquery.fancybox.css">
 		<link rel="stylesheet" href="css/video-js.css">
 		<link rel="stylesheet" href="css/screen.css">
+		<link rel="stylesheet" href="css/menu.css">
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/slick.min.js"></script>
 		<script src="js/jquery.bxslider.js"></script>
@@ -22,6 +23,7 @@
 		<script src="js/jquery.multiselect.min.js"></script>
 		<script src="js/jquery-ui-slider.js"></script>
 		<script src="js/video.js"></script>
+		<script src="js/vjs.youtube.js"></script>
 		<script src="js/common.js"></script>
 		<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	</head>
@@ -176,7 +178,14 @@
 	          												</video>
 														</div>
 														<div>
-															<img src="images/slide-g.jpg" alt="">
+														  <video
+														    id="video1"
+														    class="video-js vjs-default-skin"
+														    controls
+														    width="100%" height="100%"
+														    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "http://www.youtube.com/watch?v=JS68faEUduk"}] }'
+														  >
+														  </video>
 														</div>
 														<div>
 															<img src="images/slide-g2.jpg" alt="">
@@ -189,9 +198,9 @@
 														</div>
 													</div>
 													<div class="js-gallery-pager gallery-pager">
-														<div class="video-holder">
+<!-- 														<div class="video-holder">
 															<img src="images/slide-g5.jpg" alt="">
-														</div>
+														</div> -->
 														<div>
 															<img src="images/slide-g.jpg" alt="">
 														</div>							
