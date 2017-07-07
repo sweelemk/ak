@@ -132,6 +132,15 @@
 	visibility: visible;
 	margin-right: 9px;
 }
+.icon-block{
+	float: none;
+	margin: 0 auto 5px;
+	display: block;
+}
+.infoblock-item a{
+	color: #6dc4cb;
+}
+
 .column-color .color:after{
 	display: none;
 }.column-color .color{
@@ -154,6 +163,20 @@
 }
 .collection{
 	background: url(/bitrix/templates/sagardi/images/icon/collection.svg)
+}
+.catalog_item{
+	position: relative;
+}
+.catalog_item .delivery-status{
+	margin-top: 15px;
+	display: block;
+	font-size: 12px;
+	color: rgb(243, 189, 42);
+	font-weight: bold;
+	line-height: 1.15;
+}
+.catalog_item .delivery-status.sold{
+	color: #bebebe;
 }
 .dogovor-link{
 	position: absolute;
@@ -208,4 +231,11 @@
 	.menu > li > a{
 		font-size: 15px;
 	}
+}
+.item_img{
+	position: relative;
+}
+.item_img .sale{
+	top: -5px;
+	right: -5px;
 }

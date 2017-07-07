@@ -493,7 +493,7 @@ $(document).ready(function() {
 		    var videoId = $(this).attr("id");
 			var myPlayer = videojs(videoId);
 		    _V_(videoId).ready(function(){
-		        $('.js-gallery-pager .slick-slide').on('click', function(){
+		        $('.js-gallery-pager .slick-slide,.js-gallery-pager .slick-arrow').on('click', function(){
 		            $(".video-js").each(function (index) {
 		                this.player.pause();
 		            });
