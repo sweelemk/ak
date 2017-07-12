@@ -170,13 +170,13 @@
 .catalog_item .delivery-status{
 	margin-top: 15px;
 	display: block;
-	font-size: 12px;
-	color: rgb(243, 189, 42);
+	font-size: 13px;
+	color:  #f3bd2a;
 	font-weight: bold;
 	line-height: 1.15;
 }
 .catalog_item .delivery-status.sold{
-	color: #bebebe;
+	color: #aaaaaa;
 }
 .dogovor-link{
 	position: absolute;
@@ -237,7 +237,21 @@
 .item_img{
 	position: relative;
 }
-.item_img .sale{
+.sale-wrap{
+	position: absolute;
+	font-size: 0;
+	top: 5px;
+    right: 2px;
+}
+.sale-wrap .sale{
+	position: static;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.item_img .sale-wrap{
 	top: -5px;
 	right: -5px;
 }
@@ -250,4 +264,8 @@
 }
 .item_img .sale + .sale{
 	right: 53px;
+}
+.inner_gallery .sale-wrap{
+	top: 5px;
+	right: 0px;
 }
