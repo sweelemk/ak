@@ -259,6 +259,7 @@ $(document).ready(function() {
     if($('.fancybox').length){
 	    $('.fancybox').fancybox({
 			padding: 0,
+			arrows: true,
 			helpers:  {
 				overlay : {
 					locked: false
